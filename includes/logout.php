@@ -9,6 +9,7 @@
     session_destroy();
     
     // Redirect to login page
+    sleep(1);
     header("location: ../index.php");
     exit();
 ?>

@@ -1,10 +1,10 @@
-<?php include_once "includes/header.php"; ?>
+<?php include_once "./includes/header.php"; ?>
 <?php
     // We need to use sessions, so you should always start sessions using the below code.
     // session_start();
     // If the user is not logged in redirect to the login page...
     if (!isset($_SESSION['loggedin'])) {
-        header('Location: index.php');
+        header('Location: ./index.php');
         exit;
     }
     $DATABASE_HOST = 'localhost';
@@ -27,29 +27,26 @@
 
     <section>
         <div class="container py-5">
-            <h2>Profile Page</h2>
-            <div>
-                <p>Your account details are below:</p>
-                <table>
-                    <tr>
-                        <td>Username:</td>
-                        <td><?=$_SESSION['username']?></td>
-                    </tr>
-                    <tr>
-                        <td>Full name:</td>
-                        <td><?=$fullname?></td>
-                    </tr>
-                    <tr>
-                        <td>Phone:</td>
-                        <td><?=$phone?></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td><?=$email?></td>
-                    </tr>
-                </table>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-9 col-lg-6">
+                    <div class="card border-success">
+                        <div class="card-body py-5 text-center">
+                            <div class="mb-3"><i class="display-1 text-success bi bi-person-circle"></i></div>
+                            <h2 class="text-uppercase mb-3 fw-bold text-success">Account Information</h2>
+                            <div class="pb-2">Username: <span class="fw-bold ps-2"><?=$_SESSION['username']?></span></div>
+                            <div class="pb-2">Full Name: <span class="fw-bold ps-2"><?=$fullname?></span></div>
+                            <div class="pb-2">Phone: <span class="fw-bold ps-2"><?=$phone?></span></div>
+                            <div class="pb-2">Email: <span class="fw-bold ps-2"><?=$email?></span></div>
+                            <div class="d-grid gap-3">
+                                <a href="./update.php" class="btn btn-primary mx-5" type="button">Edit Profile</a>
+                                <a href="./changepass.php" class="btn btn-primary mx-5" type="button">Change Password</a>
+                                <a href="./includes/logout.php" class="btn btn-danger mx-5" type="button">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-<?php include_once "includes/footer.php"; ?>
+<?php include_once "./includes/footer.php"; ?>

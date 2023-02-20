@@ -36,6 +36,7 @@
     <!-- Date and time Picker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -46,8 +47,8 @@
         <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
             <div class="container">
                 <a href="./" class="navbar-brand me-auto">
-                    <span class="text-warning h1">MeatHub</span>
-                    <!-- <img src="./images/logo.png" alt="logo" class="logo img-fluid"> -->
+                    <!-- <span class="text-warning h1">MeatHub</span> -->
+                    <img src="./images/logo.png" alt="logo" class="logo img-fluid">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">

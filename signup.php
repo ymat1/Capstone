@@ -122,6 +122,7 @@
                 // Attempt to execute the prepared statement
                 if(mysqli_stmt_execute($stmt)) {
                     // Redirect to login page
+                    sleep(1);
                     header("location: ./login.php");
                 }
                 else{
@@ -141,11 +142,11 @@
     <section>
         <div class="container py-5">
             <div class="d-flex justify-content-center align-items-center">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                    <div class="card">
+                <div class="col-12 col-md-9 col-lg-6">
+                    <div class="card border-success">
                         <div class="card-body p-5">
-                            <h2 class="text-uppercase text-center mb-5">Sign Up</h2>
-                            <p>Please fill this form to create an account.</p>
+                            <h2 class="text-uppercase mb-5 fw-bold text-success">Sign Up</h2>
+                            <p class="pb-3">Please fill this form to create an account.</p>
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                                 <div class="form-floating mb-3">
                                     <input type="text" name="fullname" class="form-control <?php echo (!empty($fullname_err)) ? 'is-invalid' : ''; ?>" id="floatingFullName" placeholder="Full Name" value="<?php echo $fullname; ?>">
@@ -178,9 +179,9 @@
                                     <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
                                 </div>
                                 <div>
-                                    <input type="submit" class="btn btn-success" value="Sign Up">
+                                    <input type="submit" class="btn btn-success float-end" value="Sign Up">
                                 </div>
-                                <p>Already have an account? <a href="login.php">Login here</a>.</p>
+                                <p>Already have an account? <a href="./login.php" class="text-decoration-none text-success">Login here</a>.</p>
                             </form>
                         </div>
                     </div>
@@ -189,4 +190,4 @@
         </div>
     </section>
 
-<?php include_once "includes/footer.php"; ?>
+<?php include_once "./includes/footer.php"; ?>

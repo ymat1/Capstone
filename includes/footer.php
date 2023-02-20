@@ -20,9 +20,49 @@
     </main>
 
     <!-- Start Footer -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2022 Group10-WD30 KodeGo</p>
+    <footer class="bg-dark text-center text-white pt-1">
+        <div class="text-center text-lg-start text-white">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">MeatHub</h6>
+                        <hr class="hr-custom mb-4 mt-0 d-inline-block mx-auto" />
+                        <p>
+                            Contact 
+                            <a href="https://meathub.site/"><strong><span class="meathub">Meathub</span></strong></a>
+                            for your favorite foods to be delivered direct at your door step. Just with a click, you can order food
+                            straight from the Meathub website and have it delivered anywhere in Philippines within 15 minutes. Enjoy
+                            your favorite dish with our service all year round whether you're on the go or at home.
+                        </p>
+                    </div>
+                    <div class="contact-section col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="hr-custom mb-4 mt-0 d-inline-block mx-auto" />
+                        <p><i class="fas fa-map-marker-alt mr-3"></i>BGC, Taguig City 1635, PH</p>
+                        <p><i class="fas fa-envelope mr-3"></i>support@meathub.site</p>
+                        <p><i class="fas fa-phone mr-3"></i>+63 234 567 88</p>
+                        <p><i class="fas fa-fax mr-3"></i>+63 234 567 89</p>
+                        <div>
+                            <a href="https://www.facebook.com/" class="text-white me-4" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="text-white me-4" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="text-white me-4" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" class="text-white me-4" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 bg-black">
+                © 2023
+                <a class="text-warning" href="https://meathub.site/">MeatHub</a>
+            </div>
         </div>
     </footer>
     <!-- End Footer -->
