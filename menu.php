@@ -1,11 +1,11 @@
-<?php include "./main/secondaryheader.php"; ?>
+<?php include_once "./includes/header.php"; ?>
 
-<main>
-    <article>
+    <section>
         <div class="container bg-light py-5">
             <div data-aos="fade-up" data-aos-duration="1500">
                 <!-- carousel steak -->
-                <div class="display-1 text-success">
+                <div class="text-center text-success h2">Our Menu</div>
+                <div class="text-success h2">
                     Steak
                 </div>
                 <p class="py-3">
@@ -25,8 +25,7 @@
                                     </h4>
                                     <p class="card-text text-white">
                                         Ribeyes are loaded with marbling giving them a whole lot of flavor. This is
-                                        why many
-                                        consider these to be the tastiest of all steaks.
+                                        why many consider these to be the tastiest of all steaks.
                                     </p>
                                 </div>
                             </div>
@@ -40,9 +39,7 @@
                                         Tenderloin Steak
                                     </h4>
                                     <p class="card-text text-white">
-                                        The tenderloin steak is a cut from the loin of a cow. Also known as a filet
-                                        mignon
-                                        steak.
+                                        The tenderloin steak is a cut from the loin of a cow. Also known as a filet mignon steak.
                                     </p>
                                 </div>
                             </div>
@@ -57,8 +54,7 @@
                                     </h4>
                                     <p class="card-text text-white">
                                         You may have tried a strip steak without even knowing it. This strip comes
-                                        from the
-                                        short loin area of a cow.
+                                        from the short loin area of a cow.
                                     </p>
                                 </div>
                             </div>
@@ -73,8 +69,7 @@
                                     </h4>
                                     <p class="card-text text-white">
                                         The hanger steak may not be as well-known as the ribeye or tenderloin but if
-                                        you're
-                                        a steak lover, it's one you have to try.
+                                        you're a steak lover, it's one you have to try.
                                     </p>
                                 </div>
                             </div>
@@ -89,8 +84,7 @@
                                     </h4>
                                     <p class="card-text text-white">
                                         Fancy a large cut of beef with two types of steak in one? If so, the
-                                        porterhouse
-                                        steak is the one for you.
+                                        porterhouse steak is the one for you.
                                     </p>
                                 </div>
                             </div>
@@ -104,9 +98,7 @@
                                         Flank Steak
                                     </h4>
                                     <p class="card-text text-white">
-                                        Flank steaks are large and flat making them perfect for sharing with friends
-                                        and
-                                        family.
+                                        Flank steaks are large and flat making them perfect for sharing with friends and family.
                                     </p>
                                 </div>
                             </div>
@@ -324,10 +316,10 @@
             </div>
         </div>
 
-        <div class="container bg-light py-5">
+        <div class="container bg-light pb-5">
             <div data-aos="fade-up" data-aos-duration="1500">
                 <!-- carousel hamburger -->
-                <div class="display-1 text-success">
+                <div class="text-success h2">
                     Hamburger
                 </div>
                 <p class="py-3">
@@ -522,10 +514,10 @@
             </div>
         </div>
 
-        <div class="container bg-light py-5">
+        <div class="container bg-light pb-3">
             <div data-aos="fade-up" data-aos-duration="1500">
                 <!-- carousel pizza -->
-                <div class="display-1 text-success">
+                <div class="text-success h2">
                     Pizza
                 </div>
                 <p class="py-3">
@@ -803,9 +795,7 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
-    </article>
-</main>
+        </div> 
+    </section>
 
-<?php include "./main/footer.php"; ?>
+<?php include_once "./includes/footer.php"; ?>

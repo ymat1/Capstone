@@ -1,3 +1,8 @@
+<?php
+    ob_start();
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,8 +45,9 @@
         <!--Start Navbar -->
         <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
             <div class="container">
-                <a href="./" class="navbar-brand">
+                <a href="./" class="navbar-brand me-auto">
                     <span class="text-warning h1">MeatHub</span>
+                    <!-- <img src="./images/logo.png" alt="logo" class="logo img-fluid"> -->
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
@@ -54,6 +60,9 @@
                             <a href="./" class="nav-link fw-semibold ps-lg-3">HOME</a>
                         </li>
                         <li class="nav-item nav-custom">
+                            <a href="./menu.php" class="nav-link fw-semibold ps-lg-3">MENU</a>
+                        </li>
+                        <li class="nav-item nav-custom">
                             <a href="./about.php" class="nav-link fw-semibold ps-lg-3">ABOUT</a>
                         </li>
                         <li class="nav-item nav-custom">
@@ -62,31 +71,38 @@
                         <li class="nav-item nav-custom">
                             <a href="./faqs.php" class="nav-link fw-semibold ps-lg-3">FAQs</a>
                         </li>
-                        <li class="nav-item nav-custom">
-                            <a href="./contact.php" class="nav-link fw-semibold ps-lg-3">CONTACT US</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fw-semibold dropdown-toggle ps-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                MENU
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav-custom text-light" href="#steak">Steak</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                        <?php
+                            if (isset($_SESSION["loggedin"])) {
+                                echo "<li class='nav-item nav-custom'>
+                                    <a href='./profile.php' class='nav-link fw-semibold ps-lg-3'>
+                                        PROFILE
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item nav-custom text-light" href="#hamburger">Hamburger</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                                <li class='nav-item nav-custom'>
+                                        <a href='./includes/logout.php' class='nav-link fw-semibold ps-lg-3 pe-0'>
+                                            LOG OUT
+                                        </a>
+                                </li>";
+                            }
+                            else {
+                                echo "<li class='nav-item nav-custom'>
+                                    <a href='./signup.php' class='nav-link fw-semibold ps-lg-3'>
+                                        SIGN UP
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item nav-custom text-light" href="#pizza">Pizza</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item nav-custom">
-                            <a href="./subfolder/recipesearch.html" class="nav-link fw-semibold ps-lg-3">Cook My Own!</a>
-                        </li>
+                                <li class='nav-item nav-custom'>
+                                    <a href='./login.php' class='nav-link fw-semibold ps-lg-3 pe-0'>
+                                        LOG IN
+                                    </a>
+                                </li>";
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- End Navbar -->
     </header>
+
+    <main>
+        <article>

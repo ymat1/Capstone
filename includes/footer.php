@@ -1,3 +1,24 @@
+<?php
+    $DATABASE_HOST = 'localhost';
+    $DATABASE_USER = 'root';
+    $DATABASE_PASS = '';
+    $DATABASE_NAME = 'meathubdb';
+    $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+    if (mysqli_connect_errno()) {
+        exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+    }
+    // We don't have the password or email info stored in sessions, so instead, we can get the results from the database.
+    $stmt = $con->prepare('SELECT fullname, phonenumber, email FROM users WHERE id = ?');
+    // In this case we can use the account ID to get the account info.
+    $stmt->bind_param('i', $_SESSION['id']);
+    $stmt->execute();
+    $stmt->bind_result($fullname, $phonenumber, $email);
+    $stmt->fetch();
+    $stmt->close();
+?>
+        </article>
+    </main>
+
     <!-- Start Footer -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
         <div class="container">
@@ -31,15 +52,15 @@
                             <form id="reservation">
                                 <div class="h6 text-center">Please fill out this form</div>
                                 <div class="mb-3 px-3">
-                                    <input type="text" name="full_name" class="form-control" placeholder="Full Name" id="fullName">
+                                    <input type="text" name="full_name" class="form-control" placeholder="Full Name" id="fullName" value="<?=$fullname?>">
                                     <small id="nameError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone" value="<?=$phonenumber?>">
                                     <small id="phoneError"></small>
                                 </div>
                                 <div class="mb-3 px-3">
-                                    <input type="text" name="email" class="form-control" placeholder="Email" id="email">
+                                    <input type="text" name="email" class="form-control" placeholder="Email" id="email" value="<?=$email?>">
                                     <small id="emailError"></small>
                                 </div>
                                 <div class="mb-3 px-3">

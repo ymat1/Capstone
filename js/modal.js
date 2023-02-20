@@ -35,7 +35,7 @@ const validateFullName = () => {
 
 const validatePhoneNumber = () => {
     const phoneValue = phoneNumber.value.trim();
-    const phoneValidator = /^[0-9]*$/;
+    const phoneValidator = /^([0-9]{11,11})$/;
 
     phoneError.innerText = '';
     if(!phoneValue) {
@@ -44,11 +44,6 @@ const validatePhoneNumber = () => {
         return false;
     }
     else if(!phoneValidator.test(phoneValue)) {
-        phoneError.style.display = 'block';
-        phoneError.innerText = 'Please enter a valid phone number';
-        return false;
-    }
-    else if(phoneValue.length !== 11) {
         phoneError.style.display = 'block';
         phoneError.innerText = 'Please enter a valid phone number';
         return false;
