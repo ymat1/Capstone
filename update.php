@@ -1,24 +1,18 @@
 <?php
-    // Initialize the session
     session_start();
-    
-    // Check if the user is logged in, otherwise redirect to login page
+
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         header("location: ./login.php");
         exit;
     }
-    
-    // Include config file
+
     require_once "./includes/db.php";
-    
-    // Define variables and initialize with empty values
+
     $new_fullname = $new_phone = "";
     $new_fullname_err = $new_phone_err = $update_success = "";
-    
-    // Processing form data when form is submitted
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-    
-        // Validate full name
+
         if(empty(trim($_POST["new_fullname"]))) {
             $new_fullname_err = "Please enter your full name.";
         }
@@ -29,7 +23,6 @@
             $new_fullname = trim($_POST["new_fullname"]);
         }
 
-        // Validate phone number
         if(empty(trim($_POST["new_phone"]))) {
             $new_phone_err = "Please enter your phone number.";
         }
@@ -39,37 +32,27 @@
         else{
             $new_phone = trim($_POST["new_phone"]);
         }
-            
-        // Check input errors before updating the database
+
         if(empty($new_fullname_err) && empty($new_phone_err)){
-            // Prepare an update statement
             $sql = "UPDATE users SET fullname = ?, phonenumber = ? WHERE id = ?";
             
             if($stmt = mysqli_prepare($link, $sql)){
-                // Bind variables to the prepared statement as parameters
                 mysqli_stmt_bind_param($stmt, "ssi", $param_fullname, $param_phone, $param_id);
-                
-                // Set parameters
+
                 $param_fullname = $new_fullname;
                 $param_phone = $new_phone;
                 $param_id = $_SESSION["id"];
-                
-                // Attempt to execute the prepared statement
+
                 if(mysqli_stmt_execute($stmt)){
-                    // Name and phone updated successfully. Redirect to Profile page
                     sleep(1);
                     header("location: ./profile.php");
                     exit();
                 } else{
                     echo "Oops! Something went wrong. Please try again later.";
                 }
-
-                // Close statement
                 mysqli_stmt_close($stmt);
             }
         }
-        
-        // Close connection
         mysqli_close($link);
     }
 ?>

@@ -17,8 +17,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/11.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Raymart</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Meat Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -35,8 +34,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/18.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Siegfred</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Fry Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -53,8 +51,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/22.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Anthony</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Grill Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -71,8 +68,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/28.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Christian</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Butcher Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -89,8 +85,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/24.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Kayle Kinley</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Pantry Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -107,8 +102,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/25.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Daniel</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Vegetable Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -125,8 +119,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/26.jpg"
                                     class="rounded-circle mb-3" alt="">
                                 <h3 class="card-title mb-3">Mervin</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Exercitationem, dolore qui! Ipsum dolore sapiente atque!</p>
+                                <p class="card-text">Pastry Chef</p>
                                 <div class="d-flex justify-content-evenly">
                                     <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>

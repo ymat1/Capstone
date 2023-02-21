@@ -130,7 +130,7 @@ reservation.addEventListener(
         && validateNumberOfGuests() === true 
         && validateDateAndTime() === true ) {
             $('#reserve').modal('hide');
-            // emailjs.send(serviceId, templateId, sendMail, publicKey);
+            emailjs.send(serviceId, templateId, sendMail, publicKey);
             console.log(sendMail);
             reservation.reset();
             setTimeout(

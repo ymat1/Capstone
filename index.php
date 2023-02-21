@@ -94,16 +94,16 @@
                             <i class="bi bi-envelope-fill"></i>
                         </div>
                         <div class="h5 pb-3">Emails</div>
-                        <p><a href="mailto:meathub@support.com"
-                                class="text-decoration-none text-black">meathub@support.com</a></p>
-                        <p><a href="mailto:rb.meathub@support.com"
-                                class="text-decoration-none text-black">rb.meathub@support.com</a></p>
-                        <p><a href="mailto:ap.meathub@support.com"
-                                class="text-decoration-none text-black">ap.meathub@support.com</a></p>
-                        <p><a href="mailto:co.meathub@support.com"
-                                class="text-decoration-none text-black">co.meathub@support.com</a></p>
-                        <p><a href="mailto:so.meathub@support.com"
-                                class="text-decoration-none text-black">so.meathub@support.com</a></p>
+                        <p><a href="mailto:support@meathub.site"
+                                class="text-decoration-none text-black">support@meathub.site</a></p>
+                        <p><a href="mailto:rb.support@meathub.site"
+                                class="text-decoration-none text-black">rb.support@meathub.site</a></p>
+                        <p><a href="mailto:ap.support@meathub.site"
+                                class="text-decoration-none text-black">ap.support@meathub.site</a></p>
+                        <p><a href="mailto:co.support@meathub.site"
+                                class="text-decoration-none text-black">co.support@meathub.site</a></p>
+                        <p><a href="mailto:so.support@meathub.site"
+                                class="text-decoration-none text-black">so.support@meathub.site</a></p>
                     </div>
                 </div>
             </div>
@@ -125,6 +125,8 @@
         </div>
     </section>
     <!-- End Contact Us -->
-
+    <div class="container">
+        <div class="embedsocial-hashtag" data-ref="b587628f38e9894bd7969309ad599b5859cde7c9"></div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+    </div>
 
 <?php include_once "includes/footer.php"; ?>

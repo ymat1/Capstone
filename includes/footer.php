@@ -1,15 +1,8 @@
 <?php
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
-    $DATABASE_NAME = 'meathubdb';
-    $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-    if (mysqli_connect_errno()) {
-        exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-    }
-    // We don't have the password or email info stored in sessions, so instead, we can get the results from the database.
-    $stmt = $con->prepare('SELECT fullname, phonenumber, email FROM users WHERE id = ?');
-    // In this case we can use the account ID to get the account info.
+    include_once "db.php";
+    
+    $stmt = $link->prepare('SELECT fullname, phonenumber, email FROM users WHERE id = ?');
+    
     $stmt->bind_param('i', $_SESSION['id']);
     $stmt->execute();
     $stmt->bind_result($fullname, $phonenumber, $email);
@@ -38,10 +31,10 @@
                     <div class="contact-section col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold">Contact</h6>
                         <hr class="hr-custom mb-4 mt-0 d-inline-block mx-auto" />
-                        <p><i class="fas fa-map-marker-alt mr-3"></i>BGC, Taguig City 1635, PH</p>
+                        <p><i class="fas fa-map-marker-alt mr-3"></i>Ayala Ave, Makati, Metro Manila PH</p>
                         <p><i class="fas fa-envelope mr-3"></i>support@meathub.site</p>
-                        <p><i class="fas fa-phone mr-3"></i>+63 234 567 88</p>
-                        <p><i class="fas fa-fax mr-3"></i>+63 234 567 89</p>
+                        <p><i class="fas fa-phone mr-3"></i>+63 906 571 6141</p>
+                        <p><i class="fas fa-fax mr-3"></i>+321 654 0987</p>
                         <div>
                             <a href="https://www.facebook.com/" class="text-white me-4" target="_blank">
                             <i class="fab fa-facebook-f"></i>
